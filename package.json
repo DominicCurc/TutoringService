@@ -1,0 +1,14 @@
+{
+  "name": "TutoringService",
+  "version": "1.0.0",
+  "description": "Dominic's tutoring",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
