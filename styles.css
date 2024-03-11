@@ -1,0 +1,9 @@
+.parent {
+    display: grid;
+    place-items: center; /* shorthand for justify-items and align-items */
+    height: 100%; /* ensure parent is full height of its container */
+  }
+  
+.left-image {
+    text-align: left;
+}
