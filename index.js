@@ -41,27 +41,37 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
-    user: process.env.GMAIL_USER,
+    user: process.env.GMAIL_USER, //this appears as undefined right now
     pass: process.env.GMAIL_PASS
   },
 });
+console.log(process.env.GMAIL_USER);
 
 // POST route to send email
 app.post('/send-email', (req, res) => {
-  // The fromEmail should be your email if you're authenticating with Gmail
   console.log("post works");
+  const email = "curciodominic0@gmail.com"; // Or get this from req.body if it's dynamic
   const mailOptions = {
-    from: "curciodominic0@gmail.com", 
-    to: "curciodominic0@gmail.com", // email from the form
+    from: "curciodominic0@gmail.com",
+    to: email,
     subject: 'New Inquiry',
-    text: 'Hello Dominic, I am interested in your class', // or use req.body.message if you want the message to come from the form
+    text: 'Hello Dominic, I am interested in your class',
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return res.status(500).send(error.toString());
     }
-    res.status(200).send('Email sent: ' + info.response);
+    
+    // Insert email into the database
+    const query = "INSERT INTO inquiries (email) VALUES (?)";
+    // next step is to save user's email and name to the database
+    db.query(query, [email], (err, result) => {
+      if (err) {
+        return res.status(500).send(err.toString());
+      }
+      res.status(200).send('Email sent and saved to database: ' + info.response);
+    });
   });
 });
 
