@@ -1,0 +1,141 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.resume-container {
+    width: 60%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #666;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.key-skills, .experience, .education, .languages {
+    margin-bottom: 20px;
+}
+
+.key-skills h3, .experience h3, .education h3, .languages h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.key-skills ul, .experience .job ul, .education .degree, .languages p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.key-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.key-skills ul li::before {
+    content: '•';
+    color: #666;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.experience .job h4, .education .degree h4 {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.experience .job p, .education .degree p, .languages p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* Assuming the language proficiency levels are displayed with bars */
+.languages .proficiency {
+    display: flex;
+    align-items: center;
+}
+
+.languages .proficiency span {
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.languages .proficiency-bar {
+    height: 10px;
+    background-color: #ccc;
+    width: 100%;
+    position: relative;
+}
+
+.languages .proficiency-bar::after {
+    content: '';
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #666;
+}
+
+/* Adjust the width of proficiency bars based on the level, e.g., for C1 level */
+.languages .proficiency-bar.c1::after {
+    width: 80%; /* Adjust based on actual proficiency */
+}
+
+/* Add additional responsive styles */
+@media (max-width: 768px) {
+    .resume-container {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .contact-info {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .header h2 {
+        font-size: 1.3em;
+    }
+}
