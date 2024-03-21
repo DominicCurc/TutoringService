@@ -80,3 +80,173 @@ ul {
     margin-top: 10px;
     margin-left: 20px;
 } */
+/* /* body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+} */
+/*
+body {
+  background-image: url('background.png');
+  background-repeat: repeat;
+}
+
+
+
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 4em;
+}
+
+.right-img {
+  max-width: 20%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border:#444 solid 5px;
+  float: right;
+  margin-left: 30px;
+}
+
+.left-image {
+    display: block;
+    margin: 0 auto 20px;
+    border:#444 solid 5px;
+    float: left;
+    margin-right: 30px;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li::before {
+    content: "•";
+    color: #8a6d3b; 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+ul ul {
+    margin-top: 10px;
+    margin-left: 20px;
+} 
+*/
+body {
+    background-image: url('background.png'); /* Path to your background image */
+    background-repeat: no-repeat;
+    background-size: cover; /* Or adjust as needed */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; /* Example font */
+  
+    color: #333;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: minmax(0, 15%) 1fr minmax(0, 10%);
+    align-items: start;
+    gap: 10px; /* You can adjust this value to decrease the gap between items */
+  }
+  
+  .title {
+    grid-column: 1 / -1; /* Makes the title span across all columns */
+    text-align: center;
+    margin: 0;
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  /* Adjust width if necessary, especially if the images are too large or too small
+  .left-image,
+  .right-image {
+  }
+  */
+  
+  .left-image img,
+  .right-image img {
+    width: 100%; /* This will make the image fill its container */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    display: block;
+  }
+  
+  .profile-picture img{
+    width: 50%;
+    float: right;
+  }
+  
+  .tutor-content {
+    background-color: #c2c1c1;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .tutor-unordered-list {
+    list-style-type: none;
+  }
+  
+  .tutor-bullet-point li::before {
+    content: "•";
+    color: #8a6d3b; 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: 1em;
+    margin-right: .3em;
+  }
+  
+  .tutor-unordered-list ul {
+    margin-top: 10px;
+    margin-left: 20px;
+  } 
+  
+  /* Generic styles as needed for links, etc. */
+  a {
+    color: #0000EE;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .tutor-unordered-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* My resume CSS is below */
+  
+  
