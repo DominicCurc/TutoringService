@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-// Setup MySQL connection
+// I don't think that these are correct/accurate 
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'root',  // Replace with your MySQL username
-    password: '1234',  // Replace with your MySQL password
+    user: 'root', 
+    password: '1234', 
     database: 'emailCollector'
 });
 
@@ -37,7 +37,7 @@ app.post('/submit-email', (req, res) => {
         if (error) {
             return res.status(500).send('Error saving email');
         }
-        res.send('Email successfully saved!');
+        res.send('Email successfully saved! and here is the results: \n\n' + results);
     });
 });
 

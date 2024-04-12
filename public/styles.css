@@ -1,17 +1,3 @@
-/* body {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
-    padding: 20px;
-    margin: 0;
-} */
-
-/* body {
-  background-image: url('background.png');
-  background-repeat: repeat;
-} */
-
 .navbar ul{
     list-style-type: none;
     background-color: hsl(0, 0%, 25%);
@@ -156,12 +142,11 @@ ul ul {
 } 
 */
 body {
-    background-image: url('background.png'); /* Path to your background image */
+    background-image: url('background.png');
     background-repeat: no-repeat;
-    background-size: cover; /* Or adjust as needed */
+    background-size: cover;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif; /* Example font */
-  
+    font-family: 'Times New Roman', Times, serif; 
     color: #333;
     background-color: #f5f5f5;
     line-height: 1.6;

@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="resume_styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="greek.html">Learn Greek</a></li>
+            <li><a href="german.html">Learn German</a></li>
+            <li><a href="About_Me.html">About Me</a></li>
+            <li><a href="resume.html">Curriculum Vitae</a></li>
+        </ul>
+    </nav>
     <div class="resume-container">
-        <header class="header">
-            <h1>Dominic Curcio</h1>
-            <h2>software engineer and dev ops</h2>
-        </header>
+        <div class="header">
+            <header class="name">
+                <h1>Dominic Curcio</h1>
+                <h2>software engineer and dev ops</h2>
+            </header>
+        </div>
 
         <div class="contact-info">
             <p>+1 531-250-6502</p>
@@ -33,8 +44,8 @@
 
         <section class="experience">
             <h3>Experience</h3>
-            <div class="job">
-                <h4>Dotnet Software Engineer - Aries Systems</h4>
+            <br class="job">
+                <h4><u>Dotnet Software Engineer - Aries Systems</u></h4>
                 <p>August 2022 – Current</p>
                 <ul>
                     <li>Wrote backend C# code that improves Editorial Manager, the most popular academic journal reviewer tool in the world.</li>
@@ -42,14 +53,21 @@
                     <li>Used React to write the frontend for Elsevier’s demographics survey to collect data on Elsevier’s 14 million researchers.</li>
                 </ul>
             </br>
-                <h4>Systems Engineer with Python - FSC Edge</h4>
+                <h4><u>Systems Engineer with Python - FSC Edge</u></h4>
                 <p>November 2021 – July 2022</p>
                 <ul>
                     <li>Prioritized data checks for the US Patent Office optimizing workflows for data operators.</li>
                     <li>Implemented SQL database integrations across multiple applications creating an efficient service queue for patent processing.</li>
                     <li>Designed a Python-based Tkinter application to educate data entry staff on identifying discrepancies in patent documents.</li>
                 </ul>
-            </div>
+              </br>
+              <h4><u>Undergraduate Research Assistant - Palmetto Supercomputer at Clemson University</u>u></h4>
+                <p>October 2020 – March 2021</p>
+                <ul>
+                    <li>Translated Python code to C for a chemical engineering professor in order to make nucleation calculations 50x faster.</li>
+                    <li>Created makefiles to make the programming process easier for the programmers.</li>
+                    <li>Used MPI to write GPU enhancements in C to improve speed through parallel computing.</li>
+                </ul>
         </section>
 
         <section class="education">
@@ -72,9 +90,9 @@
             <p>German - C1</p>
             <p>Ancient Greek</p>
             <p>French - B2</p>
+            <p>Polish - B1</p>
         </section>
-
-        <!-- You'll add the Education and Languages sections here -->
+      </div>
     </div>
 </body>
 </html>
